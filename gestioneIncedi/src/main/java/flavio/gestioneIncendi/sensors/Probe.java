@@ -4,8 +4,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 import lombok.Getter;
+import lombok.Setter;
 
 @Getter
+@Setter
 public class Probe {
 	
 	private int id;
@@ -14,7 +16,7 @@ public class Probe {
 	private int smokeLevel;
 	private List<FireAlarmListener> listeners = new ArrayList<>();
 	
-	public Probe(int _id, int _lat, int _long) {
+	public Probe(int _id, double _lat, double _long) {
 		this.id = _id;
         this.latitude = _lat;
         this.longitude = _long;
@@ -29,6 +31,8 @@ public class Probe {
         this.smokeLevel = smokeLevel;
         if (smokeLevel > 5) {
             notifyListeners();  // Se il livello di fumo è alto, notifica gli ascoltatori
+        } else {
+        	System.out.println("probe = id[" + getId() + "] * Avarage smoke levels accepted [OK] * ");
         }
     }
 	

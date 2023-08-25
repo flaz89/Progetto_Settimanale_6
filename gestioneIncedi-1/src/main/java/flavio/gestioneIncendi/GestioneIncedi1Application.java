@@ -13,7 +13,7 @@ public class GestioneIncedi1Application {
 	public static void main(String[] args) {
 		SpringApplication.run(GestioneIncedi1Application.class, args);
 		
-		ProbeFactory factory = new ConcreteProbeFactory();
+		ProbeFactory factory = new ConcreteProbeFactory(null);
 		
 		Probe probe2 = factory.createProbe(2, 40.7128, -74.0060);
 		Probe probe7 = factory.createProbe(7, 24.7801, 20.0032);

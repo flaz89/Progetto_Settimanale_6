@@ -3,7 +3,7 @@ package flavio.gestioneIncendi;
 import flavio.gestioneIncendi.sensors.FireAlarmListener;
 import flavio.gestioneIncendi.sensors.Probe;
 
-public class FireAlarmListenere_Test implements FireAlarmListener {
+public class FireAlarmListener_Test implements FireAlarmListener {
 	
 	private boolean fireAlarmTriggered = false;
 	

@@ -14,7 +14,7 @@ public class ControlCenter implements FireAlarmListener {
 	@Override
 	public void onFireAlarm(Probe probe) {
 		// TODO Auto-generated method stub
-		 String notification = "\nid sonda = " + probe.getId() + "\nlatitude = " + probe.getLatitude() + "\nlongitude = " + probe.getLongitude() + "\nsmoke level = " + probe.getSmokeLevel();
+		 String notification = "\nid probe = " + probe.getId() + "\nlatitude = " + probe.getLatitude() + "\nlongitude = " + probe.getLongitude() + "\nsmoke level = " + probe.getSmokeLevel();
 	     communicationStrategy.sendNotification(notification);
 	}
 

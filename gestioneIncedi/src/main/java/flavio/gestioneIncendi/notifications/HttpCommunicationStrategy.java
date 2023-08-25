@@ -15,6 +15,7 @@ public class HttpCommunicationStrategy implements CommunicationStrategy {
 	public void sendNotification(String notification) {
 		// TODO Auto-generated method stub
 		System.out.println("Sending HTTP notification: " + notification);
+		// Qui sarebbe da implementare il codice per effettuare la chiamata HTTP reale
 	}
 
 }

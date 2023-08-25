@@ -8,10 +8,10 @@ import flavio.gestioneIncendi.sensors.Probe;
 import flavio.gestioneIncendi.sensors.ProbeFactory;
 
 @SpringBootApplication
-public class GestioneIncediApplication {
+public class GestioneIncedi1Application {
 
 	public static void main(String[] args) {
-		SpringApplication.run(GestioneIncediApplication.class, args);
+		SpringApplication.run(GestioneIncedi1Application.class, args);
 		
 		ProbeFactory factory = new ConcreteProbeFactory();
 		

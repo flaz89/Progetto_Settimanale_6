@@ -32,6 +32,7 @@ public class Probe {
         }
     }
 	
+	// Metodo per allertare gli ascoltatori in caso di allarme
 	private void notifyListeners() {
         for (FireAlarmListener listener : listeners) {
             listener.onFireAlarm(this);
